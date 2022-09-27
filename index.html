@@ -77,33 +77,22 @@
 
                     
 
-                 /* subheads as links */
-                  
-                    div.d{
-                        margin-left: 100px;
-                        font-size: 13px;
-                        line-height: 300%;
-                        font-kerning: 150%;
-                        text-decoration: underline;
-                        text-align: right;
+
                         
-                    }
+                    
                     #title
                     {
-                        background-color: #EBCF9A;
-                        height: 100vh;
+                      background-color: rgb(187, 248, 63);
+                        height:100vh;
                     }
-                    #Section1_OntheNineties
+
+                    #intro
                     {
-                        background-color: #E5E5DB;
-;
+                      background-color: rgb(237, 235, 228);
+                        height:100vh;
                     }
 
-                 
-
-
-                                      
-                </style>
+                 </style>
 
 
 
@@ -116,19 +105,12 @@
 
           <div class="row"> 
             <div class="column side" style= " font-size: 13px; line-height: 150%;" >
-         Frank Chimero |  Brand & Product Designer <br>
+         <a href= "https://frankchimero.com/"> Frank Chimero </a>
+         <br> Brand & Product Designer <br>
         Brooklyn, New York <br>
           February 18, 2015
         
-        <br><br>
-        <i>This site is an interpretation of
-            <br> my talk from <span>Webstock, 2015.</span><br>
-            It is a companion to <a href="https://frankchimero.com/blog/2013/what-screens-want/"> What screens want </a>, <br>
-             a previous essay on designing
-             <br>
-             natively for screens.</i>
-
-    </div>
+      </div>
 
 
         <div class="column center" style= "text-align: center; line-height:100%; font-weight: bold; font-size: 80px ">
@@ -138,15 +120,15 @@
 
 
 
+
+
        
-<div class= "column side" id="navbar"
+<div class= "column side"
 style= "text-align: right; line-height:300%; font-weight: 200px; font-size: 14px;
-background-color:white;
 height:100vh;
 text-decoration: underline;
-text-emphasis-color: blue;"
+text-emphasis-color: blue;" >
 
->
 <a href="#Section1_OntheNineties">
 On the 90's
 </a>
@@ -155,26 +137,67 @@ On the 90's
 On Beginner’s Mind
 </a>
 <br>
+<a href="#Section3_OnResponsiveWebsite">
+
 On Responsive Website
+
+<a/>
+
+
 <br>
-On Working against the grain<br>
-On David Hockney<br>
-On On Edgelessness <br>
-On Simplicity <br>
-On concluding <br>
-on response
+<a href="#Section4_OnWorkingAgainstThegrain">
+On Working against the grain
+</a>
+<br>
+<a href="#Section5_OnDavidHockney">
+On David Hockney<br> </a>
+
+<a href="#Section6_OnEdgelessness">
+On Edgelessness <br>
+</a>
+
+<a href="#Section7_OnSimplicity" >
+On Simplicity
+</a>
+
+<br>
+
+<a href="#Section8_OnConcluding">
+On concluding 
+</a>
+
+<br>
+
+<a href="Section9_InResponse" >
+In response
+
+</a>
 
 </div>
 
+</section>
 
+
+<section id="intro">
+    <div style="text-align:center; font-size: 18px; line-height: 200%;" >
+    <i>
+    
+    This site is an interpretation of
+        <br> my talk from <span>Webstock, 2015.</span><br>
+        It is a companion to <a href="https://frankchimero.com/blog/2013/what-screens-want/"> What screens want </a> <br>
+         a previous essay on designing
+         <br>
+         natively for screens.</i> </div>
 
 </section>
+
+
 
 <section id="Section1_OntheNineties">
 
    
-    <div class="container">
-    <div class="c" > On the 90's </div>
+    <div class="container" >
+    <div class="c"> On the 90's </div>
 
    <div class="container">
    <div class="a">
@@ -184,7 +207,8 @@ on response
     Wasn’t that great? I’ve listened to those irritating bing-bongs 30 or 40 times in the process of making this page, and while you can’t see it, I’m typing this with a big, stupid smile on my face. If you came online in the ’90s like me, you’re probably smiling too.
    That sound, of course, is the audio handshake of a modem connecting to the internet. And the fiery feeling in the chest it creates is the warm pang of nostalgia. I’ve managed to tether that grating sound to all the wonder and magic I felt my first years on the internet. Back then, if you told me that I’d get to spend the next decade or so making things for the web—well, that would be just about the best news I could be told.
        But things have changed, as they always do. I’m writing this fifteen years after the bing-bongs, and the fascination has faded. What happened is what always happens: the wonder I felt was diminished by experience. The awe goes—time takes it. </div> 
-        </section>
+        
+    </section>
         
         <section id="Section2_OnBeginner’sMind"> 
 
@@ -216,9 +240,9 @@ After I began to practice, mountains were no longer mountains and rivers were no
 So what’s the lesson? Here’s my take: we eventually work through the naive belief that profundity comes from complication. It simply isn’t so. Things have enough depth and worth on their own terms. No metaphors or analogies are needed for insight, only the willingness to listen to the subject speak for itself, even if it contradicts received wisdom.</div>
 
 
-</section>
+        </section>
 
-<section>
+<section id=Section3_OnResponsiveWebsite>
 
     <div class="container">
     <div class="c"> On Responsive Website </div>
@@ -239,7 +263,8 @@ The first thing to notice about this page is that it is fluid—it adapts to the
 But not every site can be a big vertical stack of bricks, can it? What happens if you place things side-by-side? This leads us to the primary visual challenge of responsive design. It’s the big daddy, the ur problem, the foundational thorn in your side that, for some reason, I have never seen documented. I’m going to go back to my vanilla HTML page, but let’s add a couple lines of CSS so that our image is beside the text, and both scale in width as the viewport changes. Super plain markup for a website, with a little bit of CSS added to put the image beside the typeOkay, take a look: I’ll explain what’s happening. When I change the window width, the image gets taller as it gets wider, because its proportions are fixed. The text, on the other hand, g. ets shorter as it gets wider since it has no fixed proportions. If you’ve ever designed a responsive website, this is the source of all your sadness. This is the fount of your tears, the wellspring of your suffering. If you believe in the afterlife, this is the circle of hell where they light the soles of your feet on fire. You know how people say to add a breakpoint to a responsive design when the layout starts to look weird? This is the thing that makes the layout look weird. Every time. But, this contradiction is unavoidable and unsolvable, so the only choice is to recognize it as implicit to the medium, and devise strategies to manage it.</div>
 </section> 
 
-<section>
+<section id=Section4_OnWorkingAgainstThegrain>
+
 <div class="container">
     <div class="c">On Working against the grain</div>
 
@@ -266,7 +291,7 @@ And mosaics, because every page presents a multitude of elements, and we need st
  
 </section>
 
-<section>
+<section id="Section5_OnDavidHockney">
 
     <div class="container">
     <div class="c"> On David Hockney</div>
@@ -295,7 +320,7 @@ Do you see what’s changed? Hockney stopped using Polaroids. The grid is gone, 
             </div>
         </section>
 
-            <section>
+            <section id="Section6_OnEdgelessness">
 
             <div class="container">
 
@@ -319,7 +344,7 @@ Edgelessness is in the web’s structure: it’s comprised of individual pages l
 
 </section>
 
-<section>
+<section id="Section7_OnSimplicity">
 
 <div class="container">
     <div class="c"> On Simplicity </div>
@@ -338,7 +363,7 @@ What we build is defined and controlled by its unresolvable conflicts. In respon
 
 </section>
 
-<section>
+<section id="Section8_OnConcluding">
 
 <div class="container">
 
@@ -359,7 +384,7 @@ But this is not a technological response. It is an explicit act of will—an ind
 </section>
 
 
-<section>
+<section id="Section9_InResponse">
 
         <div class="container">
         <div class="c"> In Response </div>
